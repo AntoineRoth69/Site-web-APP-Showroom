@@ -9,5 +9,55 @@
     <link rel="stylesheet" href="miseEnPage.css" />
   </head>
   
-  <body>
-  </body>    
+<body>
+  
+  <div id="fond">
+  
+    <div id="titre">
+      <span>Gestion de mesures d'un batiment</span>
+    </div>
+  
+   /* <div id="menu">
+      <ul id="lemenu">
+      <?php  
+      $encours = array(" "," ");
+
+      if( !isset($_GET["page"]) ) { 
+        $page=affichage;
+      }else{
+        $page=$_GET["page"];
+      }
+      $encours[$page] = "encours";
+       
+      echo "<li><a href=\"?page=affichage\" class=\"btn_menu $encours[0]\">Affichage</a></li>";
+      echo "<li><a href=\"?page=ajout_saison\" class=\"btn_menu $encours[1]\">Ajout_saison</a></li>"; 
+      ?> 
+      </ul>
+    </div>*/
+//en 2div, et plus haut dans une liste
+  <div id="affichage">
+	echo "<li><a href=\"?page=affichage\" class=\"btn_menu $encours[0]\">Affichage</a></li>";
+    </div>
+  <div id="ajout">
+	echo "<li><a href=\"?page=ajout_saison\" class=\"btn_menu $encours[1]\">Ajout_saison</a></li>";
+    </div>
+
+
+
+    <div id="contenu">
+    <?php
+      if( file_exists($page.".inc.php") ){ 
+        include($page.".inc.php");
+      }
+    ?>
+    </div>
+  
+    <div id="pied">
+      <span>Polytech Annecy-Chambéry - Module INFO642- Base de données et Technologies web</span>
+    </div>
+ 
+  </div>
+  
+  </body> 
+  </html>  
+  
