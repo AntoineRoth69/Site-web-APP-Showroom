@@ -35,6 +35,7 @@ Le site devra être réalisé en HTML5 et devra comporter des feuilles de styles
 Attention aux droits à l'image ainsi qu'aux droits d'auteur sur les contenus que vous pourriez placer sur votre site (image, texte, ...). Pensez que votre site a vocation à être mis en ligne et il doit être exemplaire de ce point de vue.
 
 Évaluation
+
 •	Un rapport expliquant les choix de conception du site web, la modélisation des données, les problèmes rencontrés, l'organisation de l'équipe, l’adresse url du site.
 •	L'ergonomie du site, sa capacité à répondre aux besoins du cahier des charges, sa robustesse.
 •	La qualité des sources.
