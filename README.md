@@ -1,4 +1,5 @@
 # Site-web-APP-Showroom
+<<<<<<< Updated upstream
 Thématique : réalisation d'un site web vitrine de leur APP
 
 Equipe Projet APP ShowRoom
@@ -43,3 +44,8 @@ Attention aux droits à l'image ainsi qu'aux droits d'auteur sur les contenus qu
 - La qualité des sources.
 - Rapport, Code source sont à déposer sur Moodle.
 - Présentation finale prévue lors de la dernière séance (semaine 15). L’organisation vous sera précisée plus tard.
+=======
+testestest death is A Preferable Alternative to Communism
+test
+testalexp
+>>>>>>> Stashed changes
