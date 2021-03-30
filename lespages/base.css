@@ -1,0 +1,156 @@
+#boite span{
+	text-align:center;
+	background-color:#FF00FF;
+	margin: 5px;
+	display:inline-block;
+	border-radius:10px;
+	size:100px;
+	width:10%;
+	height:auto;
+}
+
+#choix, #choix ul{
+padding:0;
+margin:0;
+list-style:none;
+text-align:center;
+}
+#choix li{
+display:inline-block;
+position:relative;
+border-radius:8px 8px 0 0;
+}
+#choix ul li{
+display:inherit;
+border-radius:0;
+}
+#choix ul li:hover{
+border-radius:0;
+}
+#choix ul li:last-child{
+border-radius:0 0 8px 8px;
+}
+#choix ul{
+position:absolute;
+z-index: 1000;
+max-height:0;
+left: 0;
+right: 0;
+overflow:hidden;
+-moz-transition: .8s all .3s;
+-webkit-transition: .8s all .3s;
+transition: .8s all .3s;
+}
+#choix li:hover ul{
+max-height:15em;
+}
+/* background des liens menus */
+#choix li:first-child{
+background-color: #65537A;
+background-image:-webkit-linear-gradient(top, #65537A 0%, #2A2333 100%);
+background-image:linear-gradient(to bottom, #65537A 0%, #2A2333 100%);
+}
+#choix li:nth-child(2){
+background-color: #729EBF;
+background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+background-image:linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+}
+#choix li:nth-child(3){
+background-color: #F6AD1A;
+background-image:-webkit-linear-gradient(top, #F6AD1A 0%, #9F391A 100%);
+background-image:linear-gradient(to bottom, #F6AD1A 0%, #9F391A 100%);
+}
+#choix li:last-child{
+background-color: #CFFF6A;
+background-image:-webkit-linear-gradient(top, #CFFF6A 0%, #677F35 100%);
+background-image:linear-gradient(to bottom, #CFFF6A 0%, #677F35 100%);
+}
+/* background des liens sous menus */
+#choix li:first-child li{
+background:#2A2333;
+}
+#choix li:nth-child(2) li{
+background:#333A40;
+}
+#choix li:nth-child(3) li{
+background:#9F391A;
+}
+#choix li:last-child li{
+background:#677F35;
+}
+/* background des liens menus et sous menus au survol */
+#choix li:first-child:hover, #choix li:first-child li:hover{
+background:#65537A;
+}
+#choix li:nth-child(2):hover, #choix li:nth-child(2) li:hover{
+background:#729EBF;
+}
+#choix li:nth-child(3):hover, #choix li:nth-child(3) li:hover{
+background:#F6AD1A;
+}
+#choix li:last-child:hover, #choix li:last-child li:hover{
+background:#CFFF6A;
+}
+/* les a href */
+#choix a{
+text-decoration:none;
+display:block;
+padding:8px 32px;
+color:#fff;
+font-family:arial;
+}
+#choix ul a{
+padding:8px 0;
+}
+#choix li:hover li a{
+color:#fff;
+text-transform:inherit;
+}
+#choix li:hover a, #choix li li:hover a{
+color:#000;
+}
+
+/*------------------------------------*/
+/* style pour le carrousel           */
+/* inspiré du site:                   */
+/* https://la-cascade.io/un-carrousel-responsif-en-pur-css/ */
+/*------------------------------------*/
+
+div#slider { width: 80%; max-width: 1000px; } 
+
+div#slider figure {
+  position: relative; 
+  width: 500%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  text-align: left;}
+
+div#slider figure img { width: 20%; height: auto; float: left; }
+
+div#slider { width: 80%; max-width: 1000px; overflow: hidden }
+
+
+@keyframes slidy {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+  50% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  95% { left: -300%; }
+  100% { left: -400%; }
+}
+
+
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  left: 0;
+  text-align: left;
+  animation: 30s slidy infinite;
+}
