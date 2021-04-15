@@ -1,6 +1,5 @@
-#pied{
-display:flex;
-margin:10px;
-width:100%;
-background-color:blue;
+footer{
+	text-align:center;
+	background-color:blue;
+	border-radius:10px;
 }
