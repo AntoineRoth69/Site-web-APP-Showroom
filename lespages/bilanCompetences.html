@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+		<title></title>
+		<meta content="info">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="base.css" />
+		<link rel="stylesheet" href="header.css" />
+		<link rel="stylesheet" href="footer.css" />
+	</head>
+
+	<body>
+
+
+		<div id="header">
+		
+			<div id="baniere">
+				<a href="https://www.polytech.univ-smb.fr/" target="_blank">
+					<img src="../media/Logo_Polytech.png" style="width:100px; max-height:100%;">
+				</a>
+				<h1 id="titre">Présentation APP Showroom<h1>
+				<a href="https://www.univ-smb.fr/" target="_blank">
+					<img src="../media/usmb.png" style="width:100px; max-height:100%;">
+				</a>
+				
+			</div>
+
+			<div id="bande">
+				
+				<div id="home" class="btn">
+					<a href="base.html">Accueil</a>
+				</div>
+				
+				<div id="contacter" class="btn">
+					<a href="contacter.php">contacter</a>
+				</div>
+				
+				<div id="menuDeroulant">
+					<ul id="choix">
+						<li><a href="#">menu</a>
+							<ul>
+								<li><a href="base.html" class="btn_menu encours" >Accueil</a></li>
+								<li><a href="demonstrateur.html" class="btn_menu">démonstrateur</a></li>
+								<li><a href="contexteEtObjectifs.html" class="btn_menu">contexte et objectifs</a></li>    
+								<li><a href="bilanCompetences.html" class="btn_menu">bilan et compétences</a></li>    
+								<li><a href="gestionProjet.php" class="btn_menu">gestion du projet</a></li>
+								<li><a href="documentsPublics.php" class="btn_menu">documentation</a></li>
+								<li><a href="ressources.php" class="btn_menu">ressources</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+
+		</div>
+
+		<div id="contenu">
+            <link rel="stylesheet" href="tableauCompetences.css" />
+            <table id="competences">
+                <tr>
+                  <th>Technologie/Phénomène</th>
+                  <th>Domaine</th> 
+                  <th>Compétences</th>
+                  <th>Capteur</th>
+                  <th>Image capteur</th>
+                </tr>
+                <tr>
+                  <td>Canapé</td>
+                  <td>Programmation micro:bit, programmation node-red, traitement de données, MQTT</td>
+                  <td>Interaction capteur</td>
+                  <td>RPI3 et de micro:bit</td>
+                  <td><img src="../media/Capteur_microbit.jpg" alt="micro:bit" class="im_capteur"></td>
+                </tr>
+                <tr>
+                  <td>LIDAR</td>
+                  <td>C ou Python, liaison série, traitement d'image, algorithmes SLAM</td>
+                  <td>Instrumentation/calibrage, connectique</td>
+                  <td>RPLIDAR A1M8</td>
+                  <td><img src="../media/Capteur_lidar.jpg" alt="RPLIDAR A1M8" class="im_capteur"></td>
+                </tr>
+                <tr>
+                  <td>Vibration</td>
+                  <td>Electronique de conditionnement de capteurs, traitement du signal</td>
+                  <td>Algo d'apprentissage</td>
+                  <td>ADXL354BZ </td>
+                  <td><img src="../media/Capteur_vibration.png" alt="ADXL354BZ" class="im_capteur"></td>
+                </tr>
+                <tr>
+                    <td>Lumière</td>
+                    <td>Traitement du signal, analyse de données, langage C, micro-controleur XIAO (utilisé dans la plinthe connectée)
+                        optionnellement BLE pour la communication</td>
+                    <td>Node Red</td>
+                    <td>PIR Panasonic EKMC260511 et GA1A12S202 </td>
+                    <td><img src="../media/Capteur_lumiere.jpg" alt="GA1A12S202" class="im_capteur"></td>
+                  </tr>
+              </table>
+	
+		</div>
+
+
+		<footer>
+			<span>Polytech Annecy-Chambéry - APP - Base de données et Technologies web</span>
+		</footer>
+
+		</div>
+	
+	</body>
+</html>  
+
+  
