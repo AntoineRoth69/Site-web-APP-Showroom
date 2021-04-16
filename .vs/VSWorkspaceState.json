@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\lespages",
+    "\\lespages\\ressources"
   ],
-  "SelectedNode": "\\main.html",
+  "SelectedNode": "\\lespages\\gestionProjet.php",
   "PreviewInSolutionExplorer": false
 }
