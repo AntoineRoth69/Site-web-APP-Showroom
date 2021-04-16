@@ -1,25 +1,53 @@
 .im_capteur {
 
 
-    max-width: 90%;
-    height: auto;
+    width:80%;
 
 }
 
 
 #contenu{
 
-    width: 50%;
+    width: auto;
+    
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
+    
+
     
     
     
 }
+
+
 #competences{
 
-    text-align: left;
+    margin: 5%;
+    max-width: 90%;
+    width:fit-content;   
+
+}
+table, th, td{
+
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+
 
 }
 
+th{
+
+    padding:15px;
+    background-color: cornflowerblue;
+}
+
+.Domain{
+
+    text-align: left;
+}
+
+tr:hover {
+    background-color:darkturquoise;
+  }
