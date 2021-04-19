@@ -49,6 +49,12 @@ th{
     text-align: left;
 }
 
+
+.fondblanc{
+
+    background-color: white;
+}
+
 tr:hover {
     background-color:darkturquoise;
   }

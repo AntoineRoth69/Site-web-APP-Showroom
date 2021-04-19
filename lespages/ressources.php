@@ -60,41 +60,32 @@
 
 		</div>
 
+			<div id="titre">
+				<span><h1>Ressources</h1></span>
+			</div>
 
-		<div id="contenu">
-			<h1>Gestion du Projet</h1>
-		<?php
-		/*Connexion a la base de donnees sur le serveur tp-epua*/
-		$conn = @mysqli_connect("tp-epua:3308", "rothan", "1g4vprum");
+			
 
-		if (mysqli_connect_errno()) {
-       		$msg = "erreur ". mysqli_connect_error();
-    	} else {
-        	$msg = "connecte au serveur " . mysqli_get_host_info($conn);
-        	/*Selection de la base de donnees*/
-        	mysqli_select_db($conn, "rothan");
-        	/*Encodage UTF8 pour les echanges avec la BD*/
-        	mysqli_query($conn, "SET NAMES UTF8");
-    	}
-
-		$sql = "SELECT nom, prenom FROM users;";
-		$result = mysqli_query($conn, $sql) or die("Requete invalide: ". mysqli_error($conn)."\n".$sql);
-		echo "<span>Membres :</span><br/>"."<ul>";
-		while ($row = mysqli_fetch_array($result)) {
-			echo "<li \>".$row["nom"].", ".$row["prenom"]."</li>";
-		}
-		echo "</ul>";
-		?>
-		</div>
-
-		
+			
+			<div id="Video">
+            	<object width="425" height="350" data="http://www.youtube.com/v/AERfie9wlWM" type="application/x-shockwave-flash"><param name="src" value="http://www.youtube.com/v/AERfie9wlWM" /></object>
+            </div>
+			
+			<div id="listeLiens">
+				<ul>
+					<li><a href="https://learn.adafruit.com/slamtec-rplidar-on-pi" class="btn_menu encours" >Lidar avec Raspberry pi</a></li>
+					<li><a href="https://raspberry-lab.fr/Debuter-sur-Raspberry-Francais/Connexion-Bureau-a-distance-Raspberry-Francais/#:~:text=Configurations%20sur%20Windows&text=Entrez%20simplement%20l'adresse%20IP,pi%20et%20raspberry)%20et%20validez." class="btn_menu">Connecter une raspberry à un ordinateur</a></li>
+				</ul>
+			
+			</div>
+			
 
 
 		<footer>
 			<span>Polytech Annecy-Chambéry - APP - Base de données et Technologies web</span>
 		</footer>
 
-		
+		</div>
 	
 	</body>
-</html>  
+</html>

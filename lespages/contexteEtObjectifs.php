@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE HTML>
 
 <html>
@@ -61,31 +64,30 @@
 		</div>
 
 
-		<div id="contenu">
-			<h1>Gestion du Projet</h1>
-		<?php
-		/*Connexion a la base de donnees sur le serveur tp-epua*/
-		$conn = @mysqli_connect("tp-epua:3308", "rothan", "1g4vprum");
+    	<div id='contenu'>
+		<link rel='stylesheet' href='contexteEtObjectifs.css' />
 
-		if (mysqli_connect_errno()) {
-       		$msg = "erreur ". mysqli_connect_error();
-    	} else {
-        	$msg = "connecte au serveur " . mysqli_get_host_info($conn);
-        	/*Selection de la base de donnees*/
-        	mysqli_select_db($conn, "rothan");
-        	/*Encodage UTF8 pour les echanges avec la BD*/
-        	mysqli_query($conn, "SET NAMES UTF8");
-    	}
+    	<div id='titre'>
+      	<span>Contexte et objectif</span>
+    	</div>
 
-		$sql = "SELECT nom, prenom FROM users;";
-		$result = mysqli_query($conn, $sql) or die("Requete invalide: ". mysqli_error($conn)."\n".$sql);
-		echo "<span>Membres :</span><br/>"."<ul>";
-		while ($row = mysqli_fetch_array($result)) {
-			echo "<li \>".$row["nom"].", ".$row["prenom"]."</li>";
-		}
-		echo "</ul>";
-		?>
-		</div>
+
+    	<p>Le projet avait pour contexte à l'origine de créer une carte du maraudeur tirer de la célèbre série littéraire Harry Potter. Peu à peu, on a dut établir un contexte un peu plus en accord avec une problématique réelle. Pouvoir détecter une personne peut avoir plusieurs intéret, comme par exemple activer des applications ou jouer à des jeux en détectant la présence et la position du joueur afin de pouvoir intéragir sur le jeux. Enfin, afin de rendre le système non intrusif, nous avons envisagé qu'aucun objet ne devrait être porter par l'utilisateur.</p>
+    	<span><img src='media/Carte.png'></span>
+    	<p>Les objectifs sont:</p>
+   		 <ul>
+        	<li>Etudier la problématique et définir les solutions envisageable</li>
+        	<li>Définir un concept ainsi que des cas d'usages</li>
+        	<li>Définir des rôles au sein du groupe pour étudier les différentes solutions</li>
+        	<li>Choisir les solutions envisagés</li>
+        	<li>Experimenter et tester les solutions afin de pouvoir créer un prototype</li>
+    	</ul>
+
+
+    	</div>
+	
+
+		
 
 		
 
@@ -98,3 +100,11 @@
 	
 	</body>
 </html>  
+
+  
+
+
+
+
+
+
