@@ -1,3 +1,5 @@
+
+
 #header{
 	border-radius:10px;
 	background-color:#C2C2C2;
@@ -20,19 +22,11 @@
 	
 }
 #bande{
-	margin-left: auto;
-	margin-right: auto;
-	display:flex;
-}
-
-
-
-#home{
-	position:relative;
-	margin-left:0%;
+    display: flex;
+	align-items: center;
+    justify-content: space-between;
 	
 }
-
 
 #txt{
 	text-align:center;
@@ -68,13 +62,15 @@ box-shadow: 1px 1px 4px #777777;
 
 }
 
-#menuDeroulant{
+#choix{
     display: flex;
 	align-items: center;
     justify-content: space-between;
 	margin:auto;
+}
 
-
+#menuDeroulant{
+		width:25%;
 }
 
 #choix, #choix ul{
@@ -84,6 +80,7 @@ list-style:none;
 text-align:center;
 
 }
+
 #choix li{
 display:inline-block;
 position:relative;
@@ -91,7 +88,7 @@ border: 2px solid #FFFFFF;
 
 }
 #parent{
-	width : 200%;
+	width :200%;
 }
 #choix ul li{
 display:inherit;
