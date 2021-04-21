@@ -65,10 +65,11 @@
 
 			<div id="slider">
 				<figure>
-					<img src="../media/Logo_Polytech.png" alt>
-					<img src="../media/lac.png" alt>
-					<img src="../media/usmb.png" alt>
-					<img src="../media/batiment.png" alt>
+					<img src="../media/slider/fauteuil.jpg" alt>
+					<img src="../media/slider/mur NORT.jpg" alt>
+					<img src="../media/slider/mur OUEST.jpg" alt>
+					<img src="../media/slider/table bar.jpg" alt>
+					<img src="../media/slider/lampe.jpg" alt>
 				</figure>
 			</div>
 			
