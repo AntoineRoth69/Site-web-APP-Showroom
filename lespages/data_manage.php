@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Questionnaire</title>
     <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="header.css" />
+	<link rel="stylesheet" href="header-tel.css" />
 </head>
 <body>
 
@@ -54,6 +56,11 @@
 
         if ($err==0) {
             echo "<h1>Merci de vos reponses</h1>"; 
+			echo "<div id=\"home\" class=\"btn\">
+					<a href=\"base.php\" style=\"display:flex; 	align-items: center;
+    justify-content: space-between;\">Accueil </a>
+				  </div>"; 
+
         } else {
             echo "<h1>Nous n'avons pas pu prendre en compte vos reponses</h1>"; 
         }

@@ -6,7 +6,9 @@
 		<title></title>
 		<meta content="info">
 		<meta charset="UTF-8">
+
 		<link rel="stylesheet" href="base.css" />
+		<link rel='stylesheet' href='lespages/demonstrateur.css' />
 		<link rel="stylesheet" href="header.css" />
 		<link rel="stylesheet" href="footer.css" />
 		<link rel="stylesheet" href="header-tel.css" />
@@ -44,7 +46,7 @@
 								<li><a href="contexteEtObjectifs.php" class="btn_menu">contexte et objectifs</a></li>    
 								<li><a href="bilanCompetences.php" class="btn_menu">bilan et compétences</a></li>    
 								<li><a href="gestionProjet.php" class="btn_menu">gestion du projet</a></li>
-								<li><a href="documentsPublics.php" class="btn_menu">documentation</a></li>
+								<li><a href="index.php" class="btn_menu">questionnaire</a></li>
 								<li><a href="ressources.php" class="btn_menu">ressources</a></li>
 							</ul>
 						</li>
@@ -63,7 +65,7 @@
 
 	
 			<div id='contenu'>
-			<link rel='stylesheet' href='lespages/demonstrateur.css' />
+
 
 				<div id='titre'>
 					<span>Demonstrateur Showroom</span>
@@ -79,7 +81,7 @@
 				<span id='description'>Cette video contient les différents systèmes possible pour capter la position des différentes personnes dans la pièce.
 				</span>
 				<figure>
-					<img src='media/fauteuil.jpg' alt='Fauteuil' id='im'>
+					<img src='media/fauteuil.jpg' alt='Emplacement pour une image du fauteuil connecté ' id='im'>
 				</figure>
 
 			</div>

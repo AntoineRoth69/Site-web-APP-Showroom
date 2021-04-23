@@ -1,1 +1,0 @@
-<p>ah batard c'est vide</p>

@@ -21,7 +21,7 @@
 				<a href="https://www.polytech.univ-smb.fr/" target="_blank">
 					<img src="../media/Logo_Polytech.png" style="width:100px; max-height:100%;">
 				</a>
-				<h1 id="titre">Présentation APP Showroom<h1>
+					<h1 id="titre">Présentation APP Showroom<h1>
 				<a href="https://www.univ-smb.fr/" target="_blank">
 					<img src="../media/usmb.png" style="width:100px; max-height:100%;">
 				</a>
@@ -44,7 +44,7 @@
 								<li><a href="contexteEtObjectifs.php" class="btn_menu">contexte et objectifs</a></li>    
 								<li><a href="bilanCompetences.php" class="btn_menu">bilan et compétences</a></li>    
 								<li><a href="gestionProjet.php" class="btn_menu">gestion du projet</a></li>
-								<li><a href="documentsPublics.php" class="btn_menu">documentation</a></li>
+								<li><a href="index.php" class="btn_menu">questionnaire</a></li>
 								<li><a href="ressources.php" class="btn_menu">ressources</a></li>
 							</ul>
 						</li>
@@ -59,7 +59,7 @@
 
 
 		</div>
-
+		
 			<div id="titre">
 				<span><h1>Ressources</h1></span>
 			</div>
@@ -68,7 +68,9 @@
 
 			
 			<div id="Video">
-            	<object width="425" height="350" data="http://www.youtube.com/v/AERfie9wlWM" type="application/x-shockwave-flash"><param name="src" value="http://www.youtube.com/v/AERfie9wlWM" /></object>
+
+					<iframe width='560' height='315' src='https://www.youtube.com/embed/AERfie9wlWM' title='YouTube video player' 
+					frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>
             </div>
 			
 			<div id="listeLiens">

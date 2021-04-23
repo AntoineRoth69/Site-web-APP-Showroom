@@ -10,7 +10,8 @@
     
     
     width:fit-content;
-    background-image:-webkit-linear-gradient(bottom, #FFFF00 0%, #FF9999 100%);  
+	background-color:#C2C2C2;
+    /*background-image:-webkit-linear-gradient(bottom, #FFFF00 0%, #FF9999 100%);  */
     padding: 10px;
 	border-radius:10px;
 	border: 3px solid black;

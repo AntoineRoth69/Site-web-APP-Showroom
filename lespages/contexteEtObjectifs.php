@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE HTML>
 
 <html>
@@ -47,7 +44,7 @@
 								<li><a href="contexteEtObjectifs.php" class="btn_menu">contexte et objectifs</a></li>    
 								<li><a href="bilanCompetences.php" class="btn_menu">bilan et compétences</a></li>    
 								<li><a href="gestionProjet.php" class="btn_menu">gestion du projet</a></li>
-								<li><a href="documentsPublics.php" class="btn_menu">documentation</a></li>
+								<li><a href="index.php" class="btn_menu">questionnaire</a></li>
 								<li><a href="ressources.php" class="btn_menu">ressources</a></li>
 							</ul>
 						</li>
@@ -73,7 +70,7 @@
 
 
     	<p>Le projet avait pour contexte à l'origine de créer une carte du maraudeur tirer de la célèbre série littéraire Harry Potter. Peu à peu, on a dut établir un contexte un peu plus en accord avec une problématique réelle. Pouvoir détecter une personne peut avoir plusieurs intéret, comme par exemple activer des applications ou jouer à des jeux en détectant la présence et la position du joueur afin de pouvoir intéragir sur le jeux. Enfin, afin de rendre le système non intrusif, nous avons envisagé qu'aucun objet ne devrait être porter par l'utilisateur.</p>
-    	<span><img src='media/Carte.png'></span>
+    	<span><img src='../media/Carte.png'></span>
     	<p>Les objectifs sont:</p>
    		 <ul>
         	<li>Etudier la problématique et définir les solutions envisageable</li>

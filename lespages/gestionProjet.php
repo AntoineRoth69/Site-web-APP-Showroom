@@ -44,7 +44,7 @@
 								<li><a href="contexteEtObjectifs.php" class="btn_menu">contexte et objectifs</a></li>    
 								<li><a href="bilanCompetences.php" class="btn_menu">bilan et compétences</a></li>    
 								<li><a href="gestionProjet.php" class="btn_menu">gestion du projet</a></li>
-								<li><a href="documentsPublics.php" class="btn_menu">documentation</a></li>
+								<li><a href="index.php" class="btn_menu">questionnaire</a></li>
 								<li><a href="ressources.php" class="btn_menu">ressources</a></li>
 							</ul>
 						</li>
