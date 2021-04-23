@@ -1,76 +1,65 @@
-<!DOCTYPE HTML>
-
-<html>
-
-  <head>
-    <title></title>
-    <meta content="info">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="gestion_batiment.css" />
-  </head>
-  
-  <?php   
-        /*Connexion à la base de données sur le serveur tp-epua*/
-		$conn = @mysqli_connect("tp-epua:3308", "login", "mdp");    
-		
-		if (mysqli_connect_errno()) {
-            $msg = "erreur ". mysqli_connect_error();
-        } else {  
-            $msg = "connecté au serveur " . mysqli_get_host_info($conn);
-            /*Sélection de la base de données*/
-            mysqli_select_db($conn, "login"); 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
 
-            /*Encodage UTF8 pour les échanges avecla BD*/
-            mysqli_query($conn, "SET NAMES UTF8");
-        }
-		
-  ?> 
-  
-  <body>
-  
-  <div id="fond">
-  
-    <div id="titre">
-      <span>Présentation APP showroom</span>
-    </div>
-  
-    <div id="menu">
-      <ul id="lemenu">
-      <?php  
-      $encours = array(" "," "," "," "," ");
-
-      if( !isset($_GET["page"]) ) { 
-        $page=0;
-      }else{
-        $page=$_GET["page"];
-      }
-      $encours[$page] = "encours";
-       
-      echo "<li><a href=\"?page=0\" class=\"btn_menu $encours[0]\">Accueil</a></li>\n";
-      echo "<li><a href=\"?page=1\" class=\"btn_menu $encours[1]\">présentation</a></li>\n";
-      echo "<li><a href=\"?page=2\" class=\"btn_menu $encours[2]\">objectif</a></li> \n";   
-      echo "<li><a href=\"?page=3\" class=\"btn_menu $encours[3]\">demonstrateur</a></li> \n";   
-      echo "<li><a href=\"?page=4\" class=\"btn_menu $encours[4]\">demonstrateur</a></li> \n"; 
-      ?> 
-      </ul>
-    </div>
-  
-    <div id="contenu">
-    <?php
-      if( file_exists("page_".$page.".inc.php") ){ 
-        include("page_".$page.".inc.php");
-      }
-    ?>
-    </div>
-  
-    <div id="pied">
-      <span>Polytech Annecy-Chambéry - APP - Base de données et Technologies web</span>
-    </div>
+<h1>Notre questionnaire !</h1>
+    <h2>N\'oubliez pas de valider vos réponses avec le bouton Envoyer en bas à droite de votre écran</h2>
  
-  </div>
-  
-  </body>
-</html>  
-  
-  
-  
+    <form action="./data_manage.php" method="post" class="container-faq">
+        <div class="questions">
+            <div class="visible-pannel">
+                <h2>Que pensez-vous de notre site ?</h2>
+                <img src="ressources/minus.svg">
+            </div>
+            <div class="toggle-pannel">
+                <input type="radio" name= "Q1" value="Très bien"> Très bien
+                <br></br>
+                <input type="radio" name= "Q1" value="Bien"> Bien
+                <br></br>
+                <input type="radio" name= "Q1" value="Moyen"> Moyen
+                <br></br>
+                <input type="radio" name= "Q1" value="Pas bien"> Pas bien
+            </div>
+        </div>
+
+        <div class="questions">
+            <div class="visible-pannel">
+                <h2>Quel est le principal aspect à améliorer ?</h2>
+                <img src="ressources/minus.svg">
+            </div>
+            <div class="toggle-pannel">
+                <input type="radio" name= "Q2" value="Esthétique"> Esthétique
+                <br></br>
+                <input type="radio" name= "Q2" value="Contenu"> Contenu
+                <br></br>
+                <input type="radio" name= "Q2" value="Prise en main"> Prise en main
+                <br></br>
+                <input type="radio" name= "Q2" value="Rien"> Rien
+            </div>
+        </div>
+
+        <div class="questions">
+            <div class="visible-pannel">
+                <h2>Reviendrez vous sur ce site ?</h2>
+                <img src="ressources/minus.svg">
+            </div>
+            <div class="toggle-pannel">
+                <input type="radio" name= "Q3" value="Oui"> Oui
+                <br></br>
+                <input type="radio" name= "Q3" value="Non"> Non
+            </div>
+        </div>
+        <button type="submit" name="send" id="submit_button">Send</button>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+    <script src="app.js"></script>
+    
+</body>
+</html>
