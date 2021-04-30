@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Questionnaire</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="questionnaire.css">
 	<link rel="stylesheet" href="header.css" />
 	<link rel="stylesheet" href="header-tel.css" />
 </head>
@@ -31,7 +31,7 @@
 
         //requete pour la question 1
         $sql = "INSERT INTO data_question (nom_question, reponse, id_user) VALUES ('Que pensez-vous de notre site ?','$Q1', 1) ;";
-        //mettre le numéro de l'utilisateur à la place de 1 (récupérer avec l'aide d'une connexion et d'une session)
+        //mettre le numï¿½ro de l'utilisateur ï¿½ la place de 1 (rï¿½cupï¿½rer avec l'aide d'une connexion et d'une session)
         if (mysqli_query($conn, $sql)){
             $err = $err - 1;
         } else {
@@ -57,7 +57,7 @@
         if ($err==0) {
             echo "<h1>Merci de vos reponses</h1>"; 
 			echo "<div id=\"home\" class=\"btn\">
-					<a href=\"base.php\" style=\"display:flex; 	align-items: center;
+					<a href=\"../main.php\" style=\"display:flex; 	align-items: center;
     justify-content: space-between;\">Accueil </a>
 				  </div>"; 
 
