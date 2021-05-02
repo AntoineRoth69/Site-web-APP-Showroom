@@ -2,7 +2,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
 
 <h1>Notre questionnaire !</h1>
-    <h2>N'oubliez pas de valider vos réponses avec le bouton Send en bas à droite de votre écran</h2>
+    <h2>N'oubliez pas de valider vos réponses avec le bouton Send en bas à gauche de votre écran</h2>
  
     <form action="lespages/data_manage.php" method="post" class="container-faq">
         <div class="questions">
