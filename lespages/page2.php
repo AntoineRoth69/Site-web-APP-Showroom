@@ -1,7 +1,7 @@
-	
+
 <link rel='stylesheet' href='lespages/contexteEtObjectifs.css' />
 
-<div id='titre'>
+<div id="titre">
   <span>Contexte et objectif</span>
 </div>
 

@@ -40,6 +40,18 @@
                 }
                 $encours[$page] = "encours";
 
+                /*Connexion a la base de donnees sur le serveur tp-epua*/
+				$conn = @mysqli_connect("tp-epua:3308", "rothan", "1g4vprum");
+
+				if (mysqli_connect_errno()) {
+					$msg = "erreur ". mysqli_connect_error();
+				} else {
+					$msg = "connecte au serveur " . mysqli_get_host_info($conn);
+					/*Selection de la base de donnees*/
+					mysqli_select_db($conn, "rothan");
+					/*Encodage UTF8 pour les echanges avec la BD*/
+					mysqli_query($conn, "SET NAMES UTF8");
+				}
             ?>
 				
 				<div id="home" class="btn">
